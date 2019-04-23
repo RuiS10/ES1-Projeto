@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Tarefa3">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tarefa3</output-path>
+    <root id="archive" name="Tarefa3.jar">
+      <element id="module-output" name="Project1" />
+      <element id="file-copy" path="$PROJECT_DIR$/resources/Diagrama_Classes_Livraria_Novo.pdf" />
+    </root>
+  </artifact>
+</component>
