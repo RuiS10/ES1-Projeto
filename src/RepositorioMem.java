@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 
-public class Repositorio {
+public class RepositorioMem implements Repositorio {
 
-    public Repositorio() {
+    public RepositorioMem() {
     }
-
     ArrayList<Notificacao> ListaNot = new ArrayList<>();
     ArrayList<Requisicao> ListaReq= new ArrayList<>();
     ArrayList<Copia> ListaCop = new ArrayList<>();
@@ -18,7 +17,6 @@ public class Repositorio {
     ArrayList<EntradaNovoLivro> ListaEntradaLiv = new ArrayList<>();
     ArrayList<PropostaAquisicao> ListaProp = new ArrayList<>();
     ArrayList<RequisicaoCompra> ListaReqComp = new ArrayList<>();
-
     public void adicionaCoima(Coima coima)
     {
         ListaCoima.add(coima);
