@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class RepositorioMem implements Repositorio {
+public class RepositorioMem implements Repositorio{
 
     public RepositorioMem() {
     }
@@ -34,7 +34,7 @@ public class RepositorioMem implements Repositorio {
     {
         ListaEnc.add(encomenda);
     }
-    public void EntradaNovoLivro(EntradaNovoLivro entradaNovoLivro) { ListaEntradaLiv.add(entradaNovoLivro); }
+    public void adicionaEntradaNovoLivro(EntradaNovoLivro entradaNovoLivro) { ListaEntradaLiv.add(entradaNovoLivro); }
     public void adicionaLivro(Livro livro)
     {
         ListaLiv.add(livro);
