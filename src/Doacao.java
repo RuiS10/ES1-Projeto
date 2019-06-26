@@ -2,11 +2,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Doacao {
-    ArrayList<Livro> lista_livros;
-    Utilizador utilizador;
-    java.time.LocalDate data;
-    int quantidade;
-    java.lang.String descricao;
+    private  ArrayList<Livro> lista_livros;
+    private Utilizador utilizador;
+    private java.time.LocalDate data;
+    private int quantidade;
+    private java.lang.String descricao;
 
     public Doacao(ArrayList<Livro> lista_livros, Utilizador utilizador, LocalDate data, int quantidade, String descricao) {
         this.lista_livros = lista_livros;

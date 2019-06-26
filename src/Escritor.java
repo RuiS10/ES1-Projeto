@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Escritor {
-    java.lang.String Nome;
-    ArrayList<Livro> lista_obras;
+    private java.lang.String Nome;
+    private ArrayList<Livro> lista_obras;
 
     public Escritor(String nome, ArrayList<Livro> lista_obras) {
         Nome = nome;

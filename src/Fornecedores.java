@@ -1,8 +1,8 @@
 public class Fornecedores {
-    int NIF_Fornecedor;
-    java.lang.String nome;
-    int contacto;
-    java.lang.String Localizacao;
+    private int NIF_Fornecedor;
+    private  java.lang.String nome;
+    private int contacto;
+    private  java.lang.String Localizacao;
 
 
     public Fornecedores(int NIF_Fornecedor, String nome, int contacto, String localizacao) {

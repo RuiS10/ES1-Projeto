@@ -1,11 +1,11 @@
 public class Eventos{
-    int cod_evento;
-    java.lang.String descricao;
-    int data_inicio;
-    int data_fim;
-    java.lang.String localizacao;
-    Escritor escritor;
-    int descontos;
+    private  int cod_evento;
+    private  java.lang.String descricao;
+    private  int data_inicio;
+    private  int data_fim;
+    private  java.lang.String localizacao;
+    private Escritor escritor;
+    private  int descontos;
 
     public Eventos(int cod_evento, String descricao, int data_inicio, int data_fim, String localizacao, Escritor escritor, int descontos) {
         this.cod_evento = cod_evento;

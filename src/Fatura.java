@@ -1,22 +1,22 @@
 import java.util.ArrayList;
 
 public class Fatura {
-    ArrayList<Livro> list_livro;
-    float price;
-    int quantidade;
-    int data_emissao;
-    java.lang.String descricao;
-    int data_limite;
-    Fornecedores fornecedor;
+   private ArrayList<Livro> list_livro;
+   private float price;
+   private int quantidade;
+   private int data_emissao;
+   private java.lang.String descricao;
+   private int data_limite;
+   private Escritor escritor;
 
-    public Fatura(ArrayList<Livro> list_livro, float price, int quantidade, int data_emissao, String descricao, int data_limite, Fornecedores fornecedor) {
+    public Fatura(ArrayList<Livro> list_livro, float price, int quantidade, int data_emissao, String descricao, int data_limite, Escritor escritor) {
         this.list_livro = list_livro;
         this.price = price;
         this.quantidade = quantidade;
         this.data_emissao = data_emissao;
         this.descricao = descricao;
         this.data_limite = data_limite;
-        this.fornecedor = fornecedor;
+        this.escritor = escritor;
     }
 
     public ArrayList<Livro> getList_livro() {
@@ -67,11 +67,11 @@ public class Fatura {
         this.data_limite = data_limite;
     }
 
-    public Fornecedores getFornecedor() {
-        return fornecedor;
+    public Escritor getEscritor() {
+        return escritor;
     }
 
-    public void setFornecedor(Fornecedores fornecedor) {
-        this.fornecedor = fornecedor;
+    public void setEscritor(Escritor escritor) {
+        this.escritor = escritor;
     }
 }
