@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class RepositorioMem implements Repositorio{
+public class  RepositorioMem implements Repositorio{
 
     public RepositorioMem() {
     }
@@ -17,11 +17,12 @@ public class RepositorioMem implements Repositorio{
     ArrayList<EntradaNovoLivro> ListaEntradaLiv = new ArrayList<>();
     ArrayList<PropostaAquisicao> ListaProp = new ArrayList<>();
     ArrayList<RequisicaoCompra> ListaReqComp = new ArrayList<>();
-    public void adicionaCoima(Coima coima)
-    {
-        ListaCoima.add(coima);
-    }
-    public void adicionaCopia(Copia copia) {ListaCop.add(copia);}
+    ArrayList<Fornecedores> ListaForncedores = new ArrayList<>();
+    ArrayList<Doacao>ListaDoacoes = new ArrayList<>();
+    ArrayList<Eventos>ListaEventos = new ArrayList<>();
+    ArrayList<Fatura> ListaFaturas = new ArrayList<>();
+    public void adicionaCoima(Coima coima){ ListaCoima.add(coima); }
+    public void adicionaCopia(Copia copia){ ListaCop.add(copia);}
     public void adicionaDevolucao(Devolucao devolucao)
     {
         ListaDev.add(devolucao);
@@ -57,6 +58,10 @@ public class RepositorioMem implements Repositorio{
     {
         ListaUti.add(utilizador);
     }
+    public void adicionaFornecedor(Fornecedores fornecedores){ListaForncedores.add(fornecedores);}
+    public void adicionaDoacao(Doacao doacao){ListaDoacoes.add(doacao);}
+    public void adicionaEvento(Eventos evento){ListaEventos.add(evento);}
+    public void adicionaFatura(Fatura fatura){ListaFaturas.add(fatura);}
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r)
     {
 

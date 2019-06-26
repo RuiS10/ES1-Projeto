@@ -24,4 +24,5 @@ public class Escritor {
     public void setLista_obras(ArrayList<Livro> lista_obras) {
         this.lista_obras = lista_obras;
     }
+
 }

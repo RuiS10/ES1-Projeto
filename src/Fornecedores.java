@@ -4,6 +4,7 @@ public class Fornecedores {
     int contacto;
     java.lang.String Localizacao;
 
+
     public Fornecedores(int NIF_Fornecedor, String nome, int contacto, String localizacao) {
         this.NIF_Fornecedor = NIF_Fornecedor;
         this.nome = nome;

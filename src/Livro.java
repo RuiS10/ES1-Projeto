@@ -2,11 +2,13 @@ public class Livro {
     private String titulo;
     private String editora;
     private float preco;
+    private int stock;
 
-    public Livro(String titulo, String editora) {
+    public Livro(String titulo, String editora, float preco, int stock) {
         this.titulo = titulo;
         this.editora = editora;
-        this.preco= preco;
+        this.preco = preco;
+        this.stock = stock;
     }
 
     public String getTitulo() {
@@ -31,5 +33,13 @@ public class Livro {
 
     public void setPreco(float preco) {
         this.preco = preco;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }

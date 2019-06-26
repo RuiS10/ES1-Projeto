@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Tarefa4">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tarefa4</output-path>
+    <root id="archive" name="Tarefa4.jar">
+      <element id="module-output" name="Project1" />
+    </root>
+  </artifact>
+</component>
