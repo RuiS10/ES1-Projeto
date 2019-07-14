@@ -4,17 +4,23 @@ public class Eventos{
     private  int data_inicio;
     private  int data_fim;
     private  java.lang.String localizacao;
-    private Escritor escritor;
     private  int descontos;
+    private PropostaEvento propostaEvento;
+    private ReservaSalas reservaSala;
+    private Inscricao inscricao;
+    private VendaLivros vendaLivros;
 
-    public Eventos(int cod_evento, String descricao, int data_inicio, int data_fim, String localizacao, Escritor escritor, int descontos) {
+    public Eventos(int cod_evento, String descricao, int data_inicio, int data_fim, String localizacao, int descontos, ReservaSalas reservaSala, VendaLivros vendaLivros, PropostaEvento propostaEvento, Inscricao inscricao) {
         this.cod_evento = cod_evento;
         this.descricao = descricao;
         this.data_inicio = data_inicio;
         this.data_fim = data_fim;
         this.localizacao = localizacao;
-        this.escritor = escritor;
         this.descontos = descontos;
+        this.reservaSala = reservaSala;
+        this.vendaLivros = vendaLivros;
+        this.propostaEvento = propostaEvento;
+        this.inscricao = inscricao;
     }
 
     public int getCod_evento() {
@@ -57,19 +63,43 @@ public class Eventos{
         this.localizacao = localizacao;
     }
 
-    public Escritor getEscritor() {
-        return escritor;
-    }
-
-    public void setEscritor(Escritor escritor) {
-        this.escritor = escritor;
-    }
-
     public int getDescontos() {
         return descontos;
     }
 
     public void setDescontos(int descontos) {
         this.descontos = descontos;
+    }
+
+    public ReservaSalas getReservaSala() {
+        return reservaSala;
+    }
+
+    public void setReservaSala(ReservaSalas reservaSala) {
+        this.reservaSala = reservaSala;
+    }
+
+    public VendaLivros getVendaLivros() {
+        return vendaLivros;
+    }
+
+    public void setVendaLivros(VendaLivros vendaLivros) {
+        this.vendaLivros = vendaLivros;
+    }
+
+    public PropostaEvento getPropostaEvento() {
+        return propostaEvento;
+    }
+
+    public void setPropostaEvento(PropostaEvento propostaEvento) {
+        this.propostaEvento = propostaEvento;
+    }
+
+    public Inscricao getInscricao() {
+        return inscricao;
+    }
+
+    public void setInscricao(Inscricao inscricao) {
+        this.inscricao = inscricao;
     }
 }

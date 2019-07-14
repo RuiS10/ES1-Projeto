@@ -2,34 +2,26 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Doacao {
-    private  ArrayList<Livro> lista_livros;
-    private Utilizador utilizador;
+    private Livro livro;
     private java.time.LocalDate data;
     private int quantidade;
     private java.lang.String descricao;
+    private PropostaDoacao propostaDoacao;
 
-    public Doacao(ArrayList<Livro> lista_livros, Utilizador utilizador, LocalDate data, int quantidade, String descricao) {
-        this.lista_livros = lista_livros;
-        this.utilizador = utilizador;
+    public Doacao(Livro livro, LocalDate data, int quantidade, String descricao, PropostaDoacao propostaDoacao) {
+        this.livro = livro;
         this.data = data;
         this.quantidade = quantidade;
         this.descricao = descricao;
+        this.propostaDoacao = propostaDoacao;
     }
 
-    public ArrayList<Livro> getLista_livros() {
-        return lista_livros;
+    public Livro getLivro() {
+        return livro;
     }
 
-    public void setLista_livros(ArrayList<Livro> lista_livros) {
-        this.lista_livros = lista_livros;
-    }
-
-    public Utilizador getUtilizador() {
-        return utilizador;
-    }
-
-    public void setUtilizador(Utilizador utilizador) {
-        this.utilizador = utilizador;
+    public void setLivro(Livro livro) {
+        this.livro = livro;
     }
 
     public LocalDate getData() {
@@ -54,5 +46,13 @@ public class Doacao {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public PropostaDoacao getPropostaDoacao() {
+        return propostaDoacao;
+    }
+
+    public void setPropostaDoacao(PropostaDoacao propostaDoacao) {
+        this.propostaDoacao = propostaDoacao;
     }
 }

@@ -1,30 +1,30 @@
 import java.util.ArrayList;
 
 public class Fatura {
-   private ArrayList<Livro> list_livro;
+   private VendaLivros vendaLivros;
    private float price;
    private int quantidade;
    private int data_emissao;
    private java.lang.String descricao;
    private int data_limite;
-   private Escritor escritor;
+   private Identidade identidade;
 
-    public Fatura(ArrayList<Livro> list_livro, float price, int quantidade, int data_emissao, String descricao, int data_limite, Escritor escritor) {
-        this.list_livro = list_livro;
+    public Fatura(VendaLivros vendaLivros, float price, int quantidade, int data_emissao, String descricao, int data_limite, Identidade identidade) {
+        this.vendaLivros = vendaLivros;
         this.price = price;
         this.quantidade = quantidade;
         this.data_emissao = data_emissao;
         this.descricao = descricao;
         this.data_limite = data_limite;
-        this.escritor = escritor;
+        this.identidade = identidade;
     }
 
-    public ArrayList<Livro> getList_livro() {
-        return list_livro;
+    public VendaLivros getVendaLivros() {
+        return vendaLivros;
     }
 
-    public void setList_livro(ArrayList<Livro> list_livro) {
-        this.list_livro = list_livro;
+    public void setVendaLivros(VendaLivros vendaLivros) {
+        this.vendaLivros = vendaLivros;
     }
 
     public float getPrice() {
@@ -67,11 +67,11 @@ public class Fatura {
         this.data_limite = data_limite;
     }
 
-    public Escritor getEscritor() {
-        return escritor;
+    public Identidade getIdentidade() {
+        return identidade;
     }
 
-    public void setEscritor(Escritor escritor) {
-        this.escritor = escritor;
+    public void setIdentidade(Identidade identidade) {
+        this.identidade = identidade;
     }
 }

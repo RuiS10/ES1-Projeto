@@ -12,9 +12,16 @@ public interface Repositorio {
     public void adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra);
     public void adicionaTipoUtilizador(TipoUtilizador tipo);
     public void adicionaUtilizador(Utilizador utilizador);
-    public void adicionaFornecedor(Fornecedores fornecedores);
     public void adicionaDoacao(Doacao doacao);
     public void adicionaEvento(Eventos evento);
     public void adicionaFatura(Fatura fatura);
+    public void adicionaPropostaDoacao(PropostaDoacao propostaDoacao);
+    public void adicionaPropostaEvento(PropostaEvento propostaEvento);
+    public void adicionaPropostaReservaSala(PropostaReservaSala propostaReservaSala);
+    public void adicionaInscricao(Inscricao inscricao);
+    public void adicionaIdentidades(Identidade identidade);
+    public void adicionaSala(Sala sala);
+    public void adicionaVendaLivros(VendaLivros vendaLivros);
+    public void adicionaReservaSalas(ReservaSalas reservaSalas);
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 }
